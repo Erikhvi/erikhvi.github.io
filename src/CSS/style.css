@@ -33,7 +33,7 @@ color: aliceblue;
 
 
 .main {
-    background: url(/img/Мы\ с\ Натусик.png) no-repeat local right bottom,  no-repeat local url(/img/фон\ 1.jpg) ;
+    background: url(../img/Мы\ с\ Натусик.png) no-repeat local right bottom,  no-repeat local url(/img/фон\ 1.jpg) ;
     height: 970px;
     display: flex;
     justify-content: center;
