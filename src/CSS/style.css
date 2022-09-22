@@ -1,0 +1,472 @@
+header {
+    height: 61px;
+    background-color: rgb(42, 62, 81);
+}
+
+.logo {
+    margin-left: 230px;
+    width: 180px;
+    float: left;
+    }
+
+.logo p {
+    font-size: 23px;
+    line-height: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    font-weight: 600;
+    color: aliceblue;
+}
+
+nav li:first-child{
+    margin: 0 42px 0 250px;
+}
+
+nav li {
+margin: 0 42px 0 0px;
+float: left;
+font-family: 'Franklin Gothic Medium';
+text-transform: uppercase;
+font-size: 17px;
+line-height: 60px;
+color: aliceblue;
+}
+
+
+.main {
+    background: url(/img/Мы\ с\ Натусик.png) no-repeat local right bottom,  no-repeat local url(/img/фон\ 1.jpg) ;
+    height: 970px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.main_text {
+    font-family: Franklin Gothic Medium;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.main__item-21px { 
+    font-size: 21px;
+    margin-top: 27px;
+}
+
+.main_buttons {
+    display: flex;
+}
+
+.main__button {
+    padding: 10px;
+    border: 2px solid rgb(42, 62, 81);
+    border-radius: 5px;
+    margin: 47px 20px 0 0 ;
+}
+
+.main__button:first-child {
+    margin-left: 300px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 694px;
+    justify-content: space-around;
+}
+
+.title {
+font-family: 'Franklin Gothic Medium';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 30px;
+margin-top: 100px;
+}
+
+.title::after {
+content: "";
+display: block;
+width: 72px;
+height: 4px;
+background: #EA7800;
+margin: 0 AUTO;
+margin-top: 30px;
+}
+
+.about-me__text {
+width: 760px;
+font-family: 'calibri';
+font-size: 17px;
+line-height: 17px;
+letter-spacing: -0.9999995827674866px;
+text-align: left;
+color: #3F495A;
+}
+
+.about-me__img {
+    margin: 40px;
+    height: 199px;
+    width: 202px;
+}
+
+.about-me_button {
+    display: flex;
+border: 2px solid #6F707E;
+border-radius: 5px;
+padding: 5px;
+}
+
+.skills {
+    background: url(../img/что\ я\ умею\ фон.jpg) local no-repeat;
+    height: 523px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Skills__slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.skills_card {
+    width: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills>.skills__title {
+    margin: 101px 0 114px 0;
+}
+
+.skills__title {
+margin: 35px 0 20px 0;
+font-size: 21px;
+        font-family: "Bahnschrift";
+        color: rgb(207, 118, 0);
+        font-weight: bold;
+
+}
+
+.skills__subtitle {
+    text-align: center;
+        font-size: 16.667px;
+        font-family: "Calibri";
+        color: rgb(63, 73, 90);
+}
+
+.case {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.case__title{
+    margin: 100px 0 0 0 ;
+}
+
+.case__text {
+    margin: 35px 0 35px 0;
+}
+
+.case_description {
+    display: flex;
+    flex-direction: row;
+}
+
+.case_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.case__title {
+        margin: 100px 0 0px 50px;
+        font-size: 25px;
+        font-family: "FranklinGothic";
+        color: rgb(56, 67, 84);}
+
+
+.case__subtitle {
+        font-family: "Calibri";
+        color: rgb(63, 73, 90);
+        margin: 0 0 0 50px;
+}
+
+.case__button{
+margin: 25px 0 0 50px;
+padding: 15px 45px;
+    border-radius: 5px;
+    background-color: rgb(99, 181, 174);
+    height: 44px;
+}
+
+.case_span{
+    font-size: 15px;
+    font-family: "FranklinGothic";
+    color: white;
+    line-height: 1;
+    text-align: center;
+}
+
+.case__right{
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    
+}
+
+.case__project-description{
+    margin: 0 0 0 50px;
+        font-size: 21px;
+        font-family: "Calibri";
+        color: rgb(63, 73, 90);
+        line-height: 1.2;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-container {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.price__title {
+    margin: 100px 0 0 0;
+    font-family: 'Franklin Gothic Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 30px;
+    }
+
+.price__subtitle {
+        font-size: 29px;
+        margin: 20px 0;
+        font-family: "FranklinGothic";
+        color: rgb(28, 37, 52);
+        line-height: 1.2;
+      }
+      
+select {
+    width: 900px;
+    padding: 10px 5px;
+    background-color: ghostwhite;
+      
+}
+
+.price_time-cash::before {
+content: "";
+display: block;
+width: 100%;
+height: 4px;
+background: whitesmoke;
+margin: 0 AUTO;
+margin-top: 30px;
+    
+
+}
+
+.statistics{
+    background-image: url(../img/фон.jpg);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+
+.statistics__container{
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.statistics_cards {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+
+
+.statistics__img {
+        width: 57px;
+        height: 57px;
+      
+}
+
+.statistics__title {
+    margin: 30px;
+        font-size: 37.5px;
+        font-family: "Impact";
+        color: rgb(50, 62, 79);
+}
+
+.statistics__subtitle {
+        font-size: 15.5px;
+        font-family: "Impact";
+        color: rgb(50, 62, 79);      
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+ .review_container {   width: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.review__img{
+    margin: 60px 0 30px 0;
+}
+
+.review__subtitle {
+    margin: 0 0 40pх 0;
+        font-size: 16.667px;
+        font-family: "Calibri";
+        color: rgb(36, 48, 66);
+}
+
+.review__bio{
+    margin: 40px 0;
+    font-size: 16.667px;
+        font-family: "Calibri";
+        color: rgb(36, 48, 66);
+}
+
+.review__bio>span {
+    font-weight: 800;
+}
+
+.contact {
+    background-image: url(../img/Фон\ контак.jpg);
+    background-position: center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__title {
+    color: white;
+}
+
+.contact__subtitle {
+    margin: 40px 0;
+        font-size: 16.667px;
+        font-family: "Calibri";
+        color: rgb(255, 255, 255);
+}
+
+.contact_tap-on-me {
+    display: flex;
+    margin: 0 0 40px 0;
+    justify-content: space-around;
+}
+
+.contact_card {
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__description {
+        margin: 15px 0 0 0;
+        font-size: 16.667px;
+        font-family: "Calibri";
+        color: rgb(255, 255, 255);
+        line-height: 1.2; 
+        height: 30px;
+}
+
+.contact__description a {
+margin: 15px 0 0 0;
+font-size: 16.667px;
+font-family: "Calibri";
+color: rgb(255, 255, 255);
+line-height: 1.2;
+}
+
+.contact__img {
+    width: 24px;
+    height: 24px;
+  }
+
+
+.contact_send-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact__text {
+    margin: 40px 0;
+        font-size: 21px;
+        font-family: "FranklinGothic";
+        color: rgb(255, 255, 255);
+}
+
+.contact-container {
+    width: 800px;
+}
+
+.contact__form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact__form input {margin:0 10px 10px 0;}
+.contact_send-me textarea {
+    width: 800px;
+  }
+.contact_send-me input:last-child {
+    font-size: 21px;
+    font-family: "FranklinGothic";
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-color: white ;
+    border-radius: 5px;
+    align-self: center;
+  }
+  
+.contact_social-site { display: none;}
+
+.map {
+    width: 100%;}
+
+.map>img {width: 100%;}
+
+.footer { height: 100px;
+    text-align: center;
+line-height: 100px;
+background-color: slategray;}
+
