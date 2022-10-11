@@ -1,581 +1,237 @@
-
-header {
-    height: 61px;
-    background-color: rgb(42, 62, 81);
-}
-
-.logo {
-    margin-left: 70px;
-    width: 200px;
-    float: left;
-    transition: 0.5s;
-}
-
-.logo p {
-    font-size: 23px;
-    line-height: 60px;
-    font-family: 'Times New Roman', Times, serif;  
-    font-weight: 600;
-    color: whitesmoke;
-}
-
-.logo:hover {
-    transform: scale(1.5, 1.5);
-}
-
-.logo p:hover {
-    color: #EA7800;
-}
-
-nav li:first-child{
-    margin: 0 42px 0 250px;
-}
-
-nav li {
-margin: 0 42px 0 0px;
-float: left;
-font-family: 'Franklin Gothic Medium';
-text-transform: uppercase;
-font-size: 17px;
-line-height: 60px;
-color: aliceblue;
-transition: 0.2s;
-}
-
-nav li:hover {
-    transform: scale(1.5, 1.5);
-    color: #EA7800;
-}
-
-nav li a:active {
-    color:aqua ;}
-    /* Почему не работает? даже если !импортант добавить все равно не работает*/
-
-.navigation-bar a:hover {
-    color: #EA7800;
-}
-
-
-.main {
-    background: url(../img/Мы\ с\ Натусик.png) no-repeat local right bottom,  no-repeat local url(../img/фон\ 1.jpg) ;
-    height: 970px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    transition-duration: 2s;
-    transition-delay: 1s;
-    transform: rotate(-2deg);
-}
-
-.main___ {
-    transition-duration: 1s;
-    transition-delay: 2s;
-    transform:translate(200px,-35px);
-}
-
-.main_text {
-    font-family: Franklin Gothic Medium;
-    font-size: 40px;
-    font-weight: 400;
-    text-align: left;
-    padding-left: 0px;
-}
-
-.main__item-21px { 
-    font-size: 21px;
-    margin-top: 27px;
-}
-
-
-.main_buttons {
-    display: flex;
-}
-
-.main_button span{
-    text-align: center;
-}
-/* хз как сделать так, чтоб после действия hover текст в кнопке все еще был по середине*/
-
-.main__button {
-    padding: 10px;
-    border: 2px solid rgb(42, 62, 81);
-    border-radius: 5px;
-    margin: 47px 20px 0 0 ;
-    transition-duration: 1s;
-}
-
-
-.button:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    font-size: larger;
-    font-weight: 600;
-    box-shadow: 2px 2px 0 0;
-/* если тут еще и height добавить, то не работает анимация, почему? */ 
-}
-
-.main__button:first-child {
-    margin-left: 200px;
-}
-
-.about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 694px;
-    justify-content: space-around;
-}
-
-.title {
-font-family: 'Franklin Gothic Medium';
-font-style: normal;
-font-weight: 400;
-font-size: 34px;
-line-height: 30px;
-margin-top: 100px;
-}
-
-.title::after {
-content: "";
-display: block;
-width: 30px;
-height: 4px;
-background: #EA7800;
-border-radius: 30px;
-margin: 0 AUTO;
-margin-top: 30px;
-transition: 1s all;
-transition-delay: 0.2s;
-}
-
-.title:hover::after {
-transform: scaleX(4);
-}
-
-.about-me__text {
-width: 760px;
-font-family: 'calibri';
-font-size: 17px;
-line-height: 17px;
-letter-spacing: -0.9999995827674866px;
-text-align: left;
-color: #3F495A;
-}
-
-.about-me__img {
-    margin: 40px;
-    height: 199px;
-    width: 202px;
-}
-
-.about_me__save-img {
-
-}
-
-.about-me_button {
-    display: flex;
-border: 2px solid #6F707E;
-border-radius: 5px;
-padding: 5px;
-transition-duration: 0.4s;
-}
-
-.about-me_button:hover {
-    transform: scale(1.4);
-    transform: translate(0px,2px);
-    box-shadow: 2px 0px 3px;
-}
-
-.about-me_button:active {
-    transform: scale(1.5);
-    box-shadow: 2px 0px 9px;
-}
-
-.skills {
-    background: url(../img/что\ я\ умею\ фон.jpg) local no-repeat;
-    height: 523px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Skills__slide {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-
-.skills_card {
-    width: 216px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.skills>.skills__title {
-    margin: 101px 0 114px 0;
-}
-
-.skills__title {
-margin: 35px 0 20px 0;
-font-size: 21px;
-        font-family: "Bahnschrift";
-        color: black;
-        font-weight: bold;
-
-}
-
-.skills__subtitle {
-    text-align: center;
-        font-size: 16.667px;
-        font-family: "Calibri";
-        color: rgb(63, 73, 90);
-}
-
-.case {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.case__title{
-    margin: 100px 0 0 0 ;
-}
-
-.case__text {
-    margin: 35px 0 35px 0;
-}
-
-.case_description {
-    display: flex;
-    flex-direction: row;
-}
-
-.case_left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.case__title {
-        margin: 100px 0 0px 50px;
-        font-size: 25px;
-        font-family: "FranklinGothic";
-        color: rgb(56, 67, 84);}
-
-
-.case__subtitle {
-        font-family: "Calibri";
-        color: rgb(63, 73, 90);
-        margin: 0 0 0 50px;
-}
-
-.case__button{
-margin: 25px 0 0 50px;
-padding: 15px 45px;
-    border-radius: 5px;
-    background-color: rgb(99, 181, 174);
-    height: 44px;
-    transition: 0.4s all 0s;
-}
-
-.case__button:hover {
-    transform: translate(0,3px);
-    box-shadow: 1px 3px 4px;
-    }
-
-.case__button:active {
-        background-color: #EA7800;
-        box-shadow: 1px 3px 4px;
-}
-    
-.case_span{
-    font-size: 15px;
-    font-family: "FranklinGothic";
-    color: white;
-    line-height: 1;
-    text-align: center;
-}
-
-.case__right{
-    display: flex;
-    flex-direction: column;
-    max-width: 850px;
-    
-}
-
-.case__project-description{
-    margin: 0 0 0 50px;
-        font-size: 21px;
-        font-family: "Calibri";
-        color: rgb(63, 73, 90);
-        line-height: 1.2;
-}
-
-.price {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.price-container {
-    width: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.price__title {
-    margin: 100px 0 0 0;
-    font-family: 'Franklin Gothic Medium';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 30px;
-    }
-
-.price__subtitle {
-        font-size: 29px;
-        margin: 20px 0;
-        font-family: "FranklinGothic";
-        color: rgb(28, 37, 52);
-        line-height: 1.2;
-      }
-      
-select {
-    width: 900px;
-    padding: 10px 5px;
-    background-color: ghostwhite;
-      
-}
-
-.price_time-cash::before {
-content: "";
-display: block;
-width: 100%;
-height: 4px;
-background: whitesmoke;
-margin: 0 AUTO;
-margin-top: 30px;
-    
-
-}
-
-.statistics{
-    background-image: url(../img/фон.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-align-items: center;
-}
-
-.statistics__container{
-    padding-top: 90px;
-    display: flex;
-    justify-content: space-between;
-    width: 900px;
-}
-
-.statistics_cards {
-    display: flex;
-    flex-direction: column;
-align-items: center;
-}
-
-
-.statistics__img {
-        width: 57px;
-        height: 57px;
-      
-}
-
-.statistics__title {
-    margin: 30px;
-        font-size: 37.5px;
-        font-family: "Impact";
-        color: rgb(50, 62, 79);
-}
-
-.statistics__subtitle {
-        font-size: 15.5px;
-        font-family: "Impact";
-        color: rgb(50, 62, 79);      
-}
-
-.review {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-}
- .review_container {   width: 690px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;}
-
-.review__img{
-    margin: 60px 0 30px 0;
-}
-
-.review__subtitle {
-    margin: 0 0 40pх 0;
-        font-size: 16.667px;
-        font-family: "Calibri";
-        color: rgb(36, 48, 66);
-}
-
-.review__bio{
-    margin: 40px 0;
-    font-size: 16.667px;
-        font-family: "Calibri";
-        color: rgb(36, 48, 66);
-}
-
-.review__bio>span {
-    font-weight: 800;
-}
-
-.contact {
-    background-image: url(../img/Фон\ контак.jpg);
-    background-position: center;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact__title {
-    color: white;
-}
-
-.contact__subtitle {
-    margin: 40px 0;
-        font-size: 16.667px;
-        font-family: "Calibri";
-        color: rgb(255, 255, 255);
-}
-
-.contact_tap-on-me {
-    display: flex;
-    margin: 0 0 40px 0;
-    justify-content: space-around;
-}
-
-.contact_card {
-    width: 130px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contact__description {
-        margin: 15px 0 0 0;
-        font-size: 16.667px;
-        font-family: "Calibri";
-        color: rgb(255, 255, 255);
-        line-height: 1.2; 
-        height: 30px;
-}
-
-.contact__description a {
-margin: 15px 0 0 0;
-font-size: 16.667px;
-font-family: "Calibri";
-color: rgb(255, 255, 255);
-line-height: 1.2;
-}
-
-.contact__img {
-    width: 24px;
-    height: 24px;
-    transition-duration: 0.3s;
-}
-
-.contact__img:hover {
-    transform: scale(1.5);
-}
-
-.contact_send-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.contact__text {
-    margin: 40px 0;
-        font-size: 21px;
-        font-family: "FranklinGothic";
-        color: rgb(255, 255, 255);
-}
-
-.contact-container {
-    width: 800px;
-}
-
-.contact__form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.contact__form textarea:focus {
-    box-shadow: 0px 0px 5px 2px slategray;
-}
-
-.contact__form input:focus {
-    box-shadow: 0px 0px 5px 2px slategray;
-}
-
-
-.contact__form input {margin:0 10px 10px 0;}
-
-.contact_send-me textarea {
-    width: 800px;
-  }
- 
-.contact_send-me input:last-child {
-    font-size: 21px;
-    font-family: "FranklinGothic";
-    color: rgb(255, 255, 255);
-    padding: 5px;
-    border-color: white ;
-    border-radius: 5px;
-    align-self: center;
-  }
-  
-.contact_social-site { display: none;}
-
-.submit {
-    display: block;
-    margin: 0 auto;
-    background-color: none;
-}  /* ничего не изменилось, не встает по середине и бекграун не прозрачный */
-
-
-.map {
-    width: 100%;}
-
-.map>img {width: 100%;}
-
-.footer { height: 100px;
-    text-align: center;
-line-height: 100px;
-background-color: slategray;}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My blog</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="img/castle-42223.png" type="image/png">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <header>
+      <div class="logo">
+        <p class="logo_name">Erik Hovhannisian</p>
+      </div>
+      <nav class="navigation-bar">
+        <ul>
+          <li><a href="#" class="navigation-item">обо мне</a></li>
+          <li><a href="#" class="navigation-item">услуги</a></li>
+          <li><a href="#" class="navigation-item">кейсы</a></li>
+          <li><a href="#" class="navigation-item">Прайс-лист</a></li>
+          <li><a href="#" class="navigation-item">Отзывы</a></li>
+          <li><a href="#" class="navigation-item">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="main___">
+      <div class="main_text">
+        <div class="main__item">Hello there</div>
+        <div class="main__item">I'm Erik Hovhannisian</div>
+        <div class="main__item main__item-21px main__item__hover">
+          Cute and nice boy!
+        </div>
+      </div>
+      <div class="main_buttons">
+        <a class="main__button button_hover  button" href="#"><span>Обо мне</span></a>
+        <a class="main__button button_hover button" href="#"><span>Мои работы</span></a>
+      </div>
+    </div>
+  </div>
+    <div class="about-me">
+      <div class="about-me__title title">Обо мне</div>
+      <div class="about-me__img">
+        <img src="img/Парень mini.jpg" alt="Erik" />
+      </div>
+      <div class="about-me__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis
+        fuga quos, nobis eaque omnis alias maxime repellendus repellat
+        voluptatem adipisci debitis nulla similique, asperiores quaerat fugit
+        quo. Numquam, tenetur.
+      </div>
+      <div class="about-me__text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, sit
+        laudantium velit nobis error pariatur accusamus, distinctio quidem unde,
+        aspernatur reiciendis esse aliquid eveniet. Rerum soluta quos ratione
+        provident optio?
+      </div>
+      <div class="about-me_button ">
+        <img src="img/downloadICO.jpg" alt="" class="about_me__save-img">
+        <a href="#" class="about-me__save-button ">скачать CV</a>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="skills__title title">Что я умею?</div>
+      <div class="Skills__slide">
+        <div class="skills_card">
+          <div class="skills__pic">
+            <img class="skills__img" src="img/laptop.jpg" alt="PC">
+          </div>
+          <div class="skills__title"> Web-design</div>
+          <div class="skills__subtitle text-font17">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, soluta!</div>
+        </div>
+        <div class="skills_card">
+          <div class="skills__pic">
+            <img class="skills__img" src="img/develop.jpg" alt="dev">
+          </div>
+          <div class="skills__title">Developer</div>
+          <div class="skills__subtitle text-font17">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, soluta?</div>
+        </div>
+        <div class="skills_card">
+          <div class="skills__pic">
+            <img class="skills__img" src="img/rocket.jpg" alt="rocket">
+          </div>
+          <div class="skills__title">SEO-optimization</div>
+          <div class="skills__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, suscipit?</div>
+        </div>
+        <div class="skills_card">
+            <div class="skills__pic">
+              <img class="skills__img" src="img/megaphone.jpg" alt="megaphone">
+            </div>
+            <div class="skills__title">Marketing</div>
+            <div class="skills__subtitle text-font17">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, suscipit?</div>
+          </div>
+      </div>
+    </div>
+    <div class="case">
+        <div class="case__title title">Cases</div>
+        <div class="case__text text-font17">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi maiores animi molestiae.</div>
+        <div class=""><img src="img/кейсы.jpg" alt="" class="case__pic"></div>
+        <div class="case_description">
+            <div class="case_left">
+                <div class="case__title ">Клиент </div>
+                <div class="case__subtitle text-font17"> какая-та компания</div>
+                <div class="case__title ">Веб-сайт</div>
+                <div class="case__subtitle text-font17">www.wwwwwww.com</div>
+                <div class="case__button">
+                    <a href="#" class="case__visit"><span class="case_span"> VISIT LIVE SITE</span></a>
+                </div>
+            </div>
+            <div class="case__right">
+                <div class="case__title "> Название проекта </div>
+                <div class='case__project-description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis maiores officia minus fuga nihil quod et neque blanditiis. Cupiditate in optio, nostrum animi sapiente quam neque commodi recusandae libero repellat repellendus enim natus porro?</div>
+            </div>
+        </div>
+    </div>
+    <div class="price">
+      <div class="price__title ">Расчет стоимости</div>
+      <div class="price-container">
+        <div class="price_input">
+            <form action="#">
+                <p class="price__subtitle">Тип сайта</p>
+                <select required name="site-type" id="#" >
+                  <option selected>выберите из списка...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <p class="price__subtitle">Дизайн</p>
+                <select required name="site-des" id="#">
+                  <option selected>выберите из списка...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <p class="price__subtitle">Адаптивность</p>
+                <select required name="site-adap" id="#">
+                  <option selected>выберите из списка...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </form>
+            <div class="price_time-cash">
+               <p class="price_time-cash-text"> time <br> price </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="statistics">
+        <div class="statistics_title title">Немного статистики</div>
+        <div class="statistics__container">
+        <div class="statistics_cards">
+            <div class="statistics__img"><img src="img/smile.jpg" alt="смайлик"></div>
+            <div class="statistics__title">120</div>
+            <div class="statistics__subtitle">Happy customers</div>
+        </div>
+        <div class="statistics_cards">
+            <div class="statistics__img"><img src="img/develop.jpg" alt="f/>"></div>
+            <div class="statistics__title">4600</div>
+            <div class="statistics__subtitle">work hours</div>
+        </div>
+        <div class="statistics_cards">
+            <div class="statistics__img"><img src="img/tick.jpg" alt="чек"></div>
+            <div class="statistics__title">340</div>
+            <div class="statistics__subtitle">finished projects</div>
+        </div>
+        <div class="statistics_cards">
+            <div class="statistics__img"><img src="img/kubok.jpg" alt="Кубок"></div>
+            <div class="statistics__title">23</div>
+            <div class="statistics__subtitle">prizes</div>
+        </div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="review__title title">Отзывы</div>
+      <div class="review_container">
+        <div class="review__img">
+            <img class="review__pic" src="img/фотка отзывы.jpg" alt="мужик какой-то"></review__img>
+        </div>
+        <div class="review__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptates molestias qui obcaecati atque accusantium aliquam commodi itaque optio error esse eius natus nisi, perspiciatis aperiam perferendis hic accusamus? Cupiditate!</div>
+        <div class="review__bio"><span>Михаил</span>, какой-то</div>
+      </div>
+    </div>
+    <div class="contact">
+        <div class="contact__title title"> Мои контакты</div>
+        <div class="contact__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, fugiat. </div>
+        <div class="contact_tap-on-me"> 
+            <div class="contact_card">
+                <div class="contact__img contact__pin"><img src="img/гео.png" alt="pin"></div>
+                <div class="contact__description">Санкт-Петербург Невский проспект 11</div>
+            </div>
+            <div class="contact_card">
+                <div class="contact__img contact__mail"> <a href="tel:+79996300000"><img src="img/труба.png" alt="tel"></a></div>
+                <div class="contact__description">
+                    <a href="tel:+79996300000">79996300000</a>
+                </div>
+            </div>
+            <div class="contact_card">
+                <div class="contact__img contact__mail"> <a href="mailto:eeerik2000@gmail.com"><img src="img/конверт.png" alt="mail"></a></div>
+                <div class="contact__description">
+                    <a href="mailto:eeerik2000@gmail.com">eeerik2000@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact_send-me">
+            <div class="contact-container">
+            <div class="contact__text">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
+            <div class="contact__form">
+                <form action="#" method="post">
+                    <input type="text" name="Name" placeholder="имя">
+                    <input name="email" type="email" placeholder="Email">
+                    <textarea name="sms" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
+                    <input class="sumbit" type="submit" value="отправить">
+                </form>
+            </div>
+          </div>
+        </div>
+        <div class="contact_social-site">
+            <div class="contact__social"><a href="http://"><img src="img/kubok.jpg" alt="fb" class="contact__social-img"></a></div>
+            <div class="contact__social"><a href="http://" ><img src="img/kubok.jpg" alt="tw" class="contact__social-img"></a></div>
+            <div class="contact__social"><a href="http://" ><img src="img/kubok.jpg" alt="ball" class="contact__social-img"></a></div>
+            <div class="contact__social"><a href="http://" ><img src="img/kubok.jpg" alt="git" class="contact__social-img"></a></div>
+            <div class="contact__social"><a href="http://"><img src="img/kubok.jpg" alt="inst" class="contact__social-img"></a></div>
+            <div class="contact__social"><a href="http://"><img src="img/kubok.jpg" alt="linkdin" class="contact__social-img"></a></div>
+        </div>
+    </div>
+    <div class="map"><img src="img/Карта.jpg" alt="карта"></div>
+    <footer>
+        <div class="footer">
+            Copyright © 2022 Erik Hovhannisian. Design by Web            
+        </div>
+    </footer>
+  </body>
+</html>
